@@ -1,9 +1,20 @@
-This project provides a Shell script that automates the tracking of AWS resources to help organizations manage costs and ensure resource manageability. The script reports on four key AWS services:
+# AWS Resource Usage Tracker 
 
-S3: Lists all storage buckets.
+A shell script-based automation tool for DevOps beginners to monitor and report AWS resource usage. This project tracks S3, EC2, Lambda, and IAM users to provide a quick snapshot of your cloud infrastructure.
 
-EC2: Lists Instance IDs for all virtual servers.
+## Project Features
+- **S3 Monitoring:** Lists all active S3 buckets.
+- **EC2 Audit:** Fetches all EC2 Instance IDs using `jq` filtering.
+- **Serverless Tracking:** Lists all deployed AWS Lambda functions.
+- **Identity Audit:** Reports all IAM users in the account.
+- **Automated Reporting:** Optimized for execution via Linux Cron Jobs.
 
-Lambda: Lists all serverless functions.
 
-IAM: Lists all users within the AWS account.
+
+## 🛠️ How to Run
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/fortunate-panda/aws-tracker-scripts.git](https://github.com/fortunate-panda/aws-tracker-scripts.git)
+   cd aws-tracker-scripts
+
+
